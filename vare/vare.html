@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vare.css">
+    <script src="vare.js"></script>
+    <title>Vare</title>
+</head>
+
+<body>
+    <h1>Skal det være én vare, i valgfritt antall?</h1>
+    <h3>(innen rimelighetens grenser da såklart...)</h3>
+    <form>
+        <label>Varetype: <select id="varetype">
+            <option value="">Velg</option>
+            <option value="elektro">Elektro</option>
+            <option value="klaer">Klær</option>
+            <option value="brus">Brus</option>
+        </select></label>
+
+        <label id="elektrodiv" class="elektroting">
+            Radio<input class="vare"  name="vare" type="radio" value="radio">
+            TV<input class="vare" name="vare" type="radio" value="TV">
+            PC<input class="vare" name="vare" type="radio" value="PC">
+        </label>
+        <label id="klaerdiv" class="klaerting">
+            Hatt<input class="vare" name="vare" type="radio" value="hatt">
+            Sko<input class="vare" name="vare" type="radio" value="sko">
+            Slips<input class="vare" name="vare" type="radio" value="slips">
+        </label>
+        <label id="brusdiv" class="brusting">
+            Cola<input class="vare" name="vare" type="radio" value="cola">
+        </label>
+
+
+        <label for="antall">Antall<input type="number" id="antall"></label>
+        <label for="bestill"><button type="button" id="bestill">Bestill</button></label>
+        
+    </form>
+    <div id="oversikt"></div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

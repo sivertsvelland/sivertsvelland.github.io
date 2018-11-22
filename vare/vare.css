@@ -1,0 +1,56 @@
+form {
+    position: relative;
+    width: 25em;
+    max-width: 85%;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color: gainsboro;
+}
+
+form>label {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color: whitesmoke;
+}
+
+form::after {
+    color: black;
+    content: "Bestilling";
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+#lagre {
+    background-color: gainsboro;
+    border: solid gray 1px;
+    border-radius: 5px;
+}
+
+.elektroting {
+    Display: none;
+}
+
+.klaerting {
+    Display: none;
+}
+
+.brusting {
+    Display: none;
+}
+
+h3 {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 2em;
+}
+
+h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
