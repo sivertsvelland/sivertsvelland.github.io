@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    left: 25%;
+    background-color: grey;
+}
+
+#main {
+    background-color: black;
+    width: 600px;
+    height: 600px;
+}
+
+#board {
+    position: relative;
+    left: 25px;
+    top: 25px;
+    background-color: whitesmoke;
+    width: 550px;
+    height: 550px;
+}
+
+div.ball {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: red;
+}

@@ -1,0 +1,75 @@
+#kalk {
+    position: absolute;
+    background-color: rgb(92, 90, 90);
+    padding: 1.5em;
+    width: 20em;
+}
+
+div.knapp > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid white 1px;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.3s;
+}
+
+div.knapp > div:active {
+    box-shadow: none;
+    left: 2px;
+    top: 2px;
+}
+
+div.knapp > div:after {
+    position: absolute;
+    content: attr(data-disp);
+    color:black;
+}
+
+#tallene > div {
+    background-color: black;
+    color: white;
+}
+
+#tallene {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 150px;
+}
+
+#display > input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.3em;
+    background-color: rgb(71, 105, 67);
+    text-align: right;
+    font-size: 1.2em;
+}
+
+#display > input.active {
+    background-color: rgb(114, 114, 113);
+}
+
+#knapper {
+    width: 30em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#operatorer {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 100px;
+}
+
+#operatorer > div {
+    background-color:rgb(214, 140, 3);
+    border: solid black 1px;
+}
