@@ -61,3 +61,12 @@ button:active {
     border-bottom: none;
 }
 
+#dagene > div {
+    margin: 2px;
+}
+
+.merk {
+    border: solid red 1px;
+    border-radius: 50%;
+}
+

@@ -36,19 +36,21 @@ function setup() {
     let btnPrevm = document.getElementById("prevm");
     let btnNextm = document.getElementById("nextm");
     let divDays = document.getElementById("dag");
+    let divDagene = Array.from(document.querySelectorAll("#dagene > div"));
 
-    let year;
-    let month;
-    let day;
+    let startYear, startMonth, startDay;
+    let year, month, day;
 
     start();
     show();
     skudd();
 
     function start() {
-        year = 2018;
-        month = 11;
-        day = 27;
+        let now = new Date();
+
+        year = startYear = now.getFullYear();
+        month = startMonth = now.getMonth() + 1;
+        day = startDay = now.getDate();
     }
 
 
@@ -92,14 +94,34 @@ function setup() {
     function show() {
         divYear.innerHTML = String(year);
         divMonth.innerHTML = monthNames.get(month);
-        
-    }
+        let antallDager = monthLength.get(month) + skudd(year, month);
 
-    function skudd(y,m) {
-        if (m !==2) return 0;
-        if (y % 400 === 0) return 1;
-        if (y % 100 === 0) return 0;
-        if (y % 4 === 0) return 1;
-        return 0;
+        let thisDate = new Date(year, month - 1, 1);
+        let offset = (thisDate.getDay() + 6) % 7;
+
+        //fjern tidligere effekter
+        for (let i = 0; i < 42; i++) {
+            let dag = divDagene[i];
+            dag.innerHTML = "";
+            dag.classList.remove("merk");
+        }
+
+        for (let i = 0; i < antallDager; i++) {
+            let dag = divDagene[i + offset];
+            dag.innerHTML = String(i + 1);
+        }
+
+        if (year === startYear && month === startMonth) {
+            let idag = divDagene[day + offset - 1];
+            idag.classList.add("merk");
+        }
     }
+}
+
+function skudd(y, m) {
+    if (m !== 2) return 0;
+    if (y % 400 === 0) return 1;
+    if (y % 100 === 0) return 0;
+    if (y % 4 === 0) return 1;
+    return 0;
 }
