@@ -20,7 +20,7 @@ function setup() {
         let vare = inpVare.value;
 
         if (antall < 1 || antall > 100 ) {
-            alert("Ikke gidd å kødd da... Nå må vi reloade siden, og prøve med seriøse antall denne gangen. OK?");
+            alert("Ikke gidd å kødd da... Nå må vi laste inn siden på nytt, og prøve med seriøse antall denne gangen. OK?");
             location.reload();
         }
 
