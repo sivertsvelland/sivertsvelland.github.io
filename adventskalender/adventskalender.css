@@ -1,0 +1,59 @@
+#luker {
+    position: relative;
+    top: 0;
+    height: 500px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-image: url("adventskalender.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#luker .luke {
+    border: solid 1px black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2em;
+    vertical-align: middle;
+    line-height: 75px;
+}
+
+#vis {
+    top: 80px;
+    left: 339px;
+    width: 600px;
+    height: 500px;
+    border: solid black 1px;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+}
+
+#julaften {
+    top: 80px;
+    left: 339px;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    border: solid black 1px;
+    display: none;
+}
