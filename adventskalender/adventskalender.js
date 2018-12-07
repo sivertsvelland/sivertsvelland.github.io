@@ -27,16 +27,16 @@ function setup() {
             setTimeout(() => {
                 videoJul.pause();
                 videoJul.style.display = "none";
-            }, 3000);
+            }, 3500);
         }
         spill(soundHappy);
         divVis.style.backgroundImage = `url("media/bilde${nr}.jpg")`;
         divVis.style.display = "block";
-        setTimeout(() => divVis.style.display = "none", 3000);
+        setTimeout(() => divVis.style.display = "none", 3500);
     }
 }
 function spill(sound){
     sound.load();
     sound.play();
-    setTimeout(() => sound.pause(), 3000);
+    setTimeout(() => sound.pause(), 3500);
 }
