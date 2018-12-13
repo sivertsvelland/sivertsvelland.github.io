@@ -1,0 +1,11 @@
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-gap: 5%;
+    grid-auto-rows: minmax(60px,auto);
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
