@@ -28,11 +28,11 @@ body{
   
   #main{
     float:left;
-    width : 50%;
+    width : 80%;
     background-color: rgb(206, 248, 217);
     padding: 2%;
     margin: 2%;
-    margin-left: 23%;
+    margin-left: 8%;
     font-family: monospace;
   }
   #main h2{
