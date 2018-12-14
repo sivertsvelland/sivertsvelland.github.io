@@ -1,3 +1,8 @@
 .resten {
     display: none;
 }
+
+#melding {
+    text-align: center;
+    font-size: 2em;
+}
