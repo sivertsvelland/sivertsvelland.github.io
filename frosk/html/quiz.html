@@ -18,7 +18,7 @@
             <h1> Byfrosker har mer draget </h1>
             <h6> Den eneste nettsiden du trenger for å lære om frosker</h6>
         </div>
-        
+
         <div id="topnav">
             <a href="../index.html">Home</a>
             <a href="../html/quiz.html">Quiz</a>
@@ -27,140 +27,142 @@
             <a href="../html/faq.html">FAQ</a>
 
         </div>
-        <div>
+        <div id="main">
+            <div>
 
-            <h1>Sjekk om du noen gang vil inngå tvangsekteskap</h1>
-            <hr>
-            <br>
+                <h1>Sjekk om du noen gang vil inngå tvangsekteskap</h1>
+                <hr>
+                <br>
 
-            <div id="sjekk">Alder:<input type="text" id="alder">
-                <button type="button" id="lagreAlder">Lagre</button> </div>
+                <div id="sjekk">Alder:<input type="text" id="alder">
+                    <button type="button" id="lagreAlder">Lagre</button> </div>
 
-            <div id="spm">
-                <audio id="audio" src="../media/fortnite.mp3"></audio>
-                <form id="quiz">
+                <div id="spm">
+                    <audio id="audio" src="../media/fortnite.mp3"></audio>
+                    <form id="quiz">
 
-                    <ol>
+                        <ol>
 
-                        <li>
+                            <li>
 
-                            <h3>Velg kjønn</h3>
+                                <h3>Velg kjønn</h3>
 
-                            <div>
-                                <input type="radio" name="question-1-answers" id="question-1-answers-A" value="1" />
-                                <label for="question-1-answers-A">Mann</label>
+                                <div>
+                                    <input type="radio" name="question-1-answers" id="question-1-answers-A" value="1" />
+                                    <label for="question-1-answers-A">Mann</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="question-1-answers" id="question-1-answers-B" value="0" />
+                                    <label for="question-1-answers-B">Kvinne</label>
+                                </div>
+
+
+
+                            </li>
+
+                            <div id="spm2">
+                                <li>
+
+                                    <h3>Er du vegiterianer?</h3>
+
+                                    <div>
+                                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                                        <label for="question-2-answers-A">Ja</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                                        <label for="question-2-answers-B">Nei</label>
+                                    </div>
+
+                                </li>
+
                             </div>
 
-                            <div>
-                                <input type="radio" name="question-1-answers" id="question-1-answers-B" value="0" />
-                                <label for="question-1-answers-B">Kvinne</label>
+                            <div id="resten">
+
+                                <li>
+
+                                    <h3>Hva er dine plystreferdigheter?</h3>
+
+                                    <div>
+                                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="1" />
+                                        <label for="question-3-answers-A">Helt greie</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="0" />
+                                        <label for="question-3-answers-B">Har ikke plystret før</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="0" />
+                                        <label for="question-3-answers-C"> Jeg bor på landet.</label>
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <h3>Hvilke av disse sangene kan du plystre?</h3>
+
+                                    <div>
+                                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="1" />
+                                        <label for="question-4-answers-A">Ja</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="0" />
+                                        <label for="question-4-answers-B">Nei</label>
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <h3>Er du født i feil kropp?</h3>
+
+                                    <div>
+                                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="0" />
+                                        <label for="question-5-answers-A">Ja</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="1" />
+                                        <label for="question-5-answers-B">Nei</label>
+                                    </div>
+
+                                </li>
+
+                                <br>
+
+                                <input type="button" value="Se svaret ditt!" id="sesvar">
                             </div>
 
 
 
-                        </li>
 
-                        <div id="spm2">
-                            <li>
 
-                                <h3>Er du vegiterianer?</h3>
-
-                                <div>
-                                    <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                                    <label for="question-2-answers-A">Ja</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                                    <label for="question-2-answers-B">Nei</label>
-                                </div>
-
-                            </li>
-
-                        </div>
-
-                        <div id="resten">
-
-                            <li>
-
-                                <h3>Hva er dine plystreferdigheter?</h3>
-
-                                <div>
-                                    <input type="radio" name="question-3-answers" id="question-3-answers-A" value="1" />
-                                    <label for="question-3-answers-A">Helt greie</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="question-3-answers" id="question-3-answers-B" value="0" />
-                                    <label for="question-3-answers-B">Har ikke plystret før</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="question-3-answers" id="question-3-answers-C" value="0" />
-                                    <label for="question-3-answers-C"> Jeg bor på landet.</label>
-                                </div>
-
-                            </li>
-
-                            <li>
-
-                                <h3>Hvilke av disse sangene kan du plystre?</h3>
-
-                                <div>
-                                    <input type="radio" name="question-4-answers" id="question-4-answers-A" value="1" />
-                                    <label for="question-4-answers-A">Ja</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="question-4-answers" id="question-4-answers-B" value="0" />
-                                    <label for="question-4-answers-B">Nei</label>
-                                </div>
-
-                            </li>
-
-                            <li>
-
-                                <h3>Er du født i feil kropp?</h3>
-
-                                <div>
-                                    <input type="radio" name="question-5-answers" id="question-5-answers-A" value="0" />
-                                    <label for="question-5-answers-A">Ja</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="question-5-answers" id="question-5-answers-B" value="1" />
-                                    <label for="question-5-answers-B">Nei</label>
-                                </div>
-
-                            </li>
-
-                            <br>
-
-                            <input type="button" value="Se svaret ditt!" id="sesvar">
-                        </div>
+                        </ol>
 
 
 
-
-
-                    </ol>
-
-
-
-                </form>
+                    </form>
+                </div>
             </div>
+
+
+
+            <div id="melding"></div>
         </div>
 
 
 
-        <div id="melding"></div>
+        <script>
+            setup();
+        </script>
     </div>
-  
-
-
-    <script>
-        setup();
-    </script>
 </body>
 
 </html>
