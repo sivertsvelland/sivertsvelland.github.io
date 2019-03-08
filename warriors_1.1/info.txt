@@ -1,0 +1,26 @@
+Styre figurene:
+    Rød figur:
+        Bevege: WASD, Boost: Shift, Skyte: Space.
+
+    Blå figur:
+        Bevege: Piltaster, Boost: "-", Skyte: Alt.
+
+Ting i spillet som ikke fungerer:
+    Overlap:
+        Når du skyter skal det registreres overlap når kulen treffer
+        figuren, og figuren skal forsvinne. 
+        Overlap funksjonen jeg har nå registrerer overlapp
+        med en gang kulen lages (treffer den figuren som skyter den ut?), 
+        og den er derfor kommentert ut i koden slik at den ikke ødelegger 
+        for resten av spillet.
+    
+    Skyting:
+        Foreløpig går det kun an å skyte en kule én gang. Koden sier
+        at kulen kun kan lages om det ikke finnes en kule fra før.
+        Av en eller annen grunn vil den ikke lage ny kule etter at
+        den gjeldene kulen er fjernet fra brettet.
+        
+        Lurer på om det kan være fordi at removeChild fortsatt kjører,
+        eller om det er en feil i funksjonen som lager kulen.
+
+Kartet har jeg tegnet i Photoshop.
