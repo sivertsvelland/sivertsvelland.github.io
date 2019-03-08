@@ -1,0 +1,240 @@
+#board {
+    position: absolute;
+    left: calc(50vw - 400px);
+    width: 800px;
+    height: 600px;
+    border: solid black 5px;
+    background: url("ugandamap1.png")
+}
+
+#warrior {
+    position: absolute;
+    top: 55px;
+    height: 50px;
+    width: 50px;
+    left: 55px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 85);
+    border: solid black 0.5px;
+}
+
+#warrior_mage {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 10px;
+    width: 30px;
+    left: 10px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+#warrior_head {
+    position: absolute;
+    top: -20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 85);
+    left: calc(25px - 12.5px);
+    border: solid black 0.5px;
+}
+
+#warrior_mouth {
+    position: absolute;
+    bottom: 3px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: beige;
+    left: calc(13px - 6.5px);
+}
+
+#warrior_arm_left {
+    position: absolute;
+    right: 48px;
+    top: 25%;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(255, 0, 85);
+    border: solid black 0.5px;
+    transform: rotate(10deg);
+}
+
+#warrior_arm_right {
+    position: absolute;
+    left: 48px;
+    top: 25%;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(255, 0, 85);
+    border: solid black 0.5px;
+    transform: rotate(-10deg);
+}
+
+#warrior_leg_left {
+    position: absolute;
+    left:4px;
+    bottom: 0%;
+    height: 2px;
+    width: 10px;
+    background-color: rgb(255, 0, 85);
+    border: solid black 0.5px;
+    transform: rotate(-85deg);
+}
+
+#warrior_leg_right {
+    position: absolute;
+    right:4px;
+    bottom: 0%;
+    height: 2px;
+    width: 10px;
+    background-color: rgb(255, 0, 85);
+    border: solid black 0.5px;
+    transform: rotate(85deg);
+}
+
+#warrior_eye_1 {
+    position: absolute;
+    top: 6px;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: black;
+    left: 6px;
+}
+
+#warrior_eye_2 {
+    position: absolute;
+    top: 6px;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: black;
+    right: 6px;
+}
+
+.bullet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+#warrior2 {
+    position: absolute;
+    bottom: 55px;
+    height: 50px;
+    width: 50px;
+    right: 55px;
+    border-radius: 50%;
+    background-color: blue;
+    border: solid black 0.5px;
+}
+
+#warrior_mage2 {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 10px;
+    width: 30px;
+    left: 10px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+#warrior_head2 {
+    position: absolute;
+    top: -20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: blue;
+    left: calc(25px - 12.5px);
+    border: solid black 0.5px;
+}
+
+#warrior_mouth2 {
+    position: absolute;
+    bottom: 3px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: beige;
+    left: calc(13px - 6.5px);
+}
+
+#warrior_arm_left2 {
+    position: absolute;
+    right: 48px;
+    top: 25%;
+    height: 2px;
+    width: 20px;
+    background-color: blue;
+    border: solid black 0.5px;
+    transform: rotate(10deg);
+}
+
+#warrior_arm_right2 {
+    position: absolute;
+    left: 48px;
+    top: 25%;
+    height: 2px;
+    width: 20px;
+    background-color: blue;
+    border: solid black 0.5px;
+    transform: rotate(-10deg);
+}
+
+#warrior_leg_left2 {
+    position: absolute;
+    left:4px;
+    bottom: 0%;
+    height: 2px;
+    width: 10px;
+    background-color: blue;
+    border: solid black 0.5px;
+    transform: rotate(-85deg);
+}
+
+#warrior_leg_right2 {
+    position: absolute;
+    right:4px;
+    bottom: 0%;
+    height: 2px;
+    width: 10px;
+    background-color: blue;
+    border: solid black 0.5px;
+    transform: rotate(85deg);
+}
+
+#warrior_eye_12 {
+    position: absolute;
+    top: 6px;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: black;
+    left: 6px;
+}
+
+#warrior_eye_22 {
+    position: absolute;
+    top: 6px;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: black;
+    right: 6px;
+}
+
+.bullet2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
