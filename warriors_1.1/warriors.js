@@ -142,5 +142,3 @@ function setup() {
     window.requestAnimationFrame(moveWarrior);
     window.requestAnimationFrame(moveWarrior2);
 }
-// Konsoll gir mange feilmeldinger som omhandler fjerning og flytting av kule når den ikke er laget,
-// eller etter at den er fjernet. Disse feilmeldingene påvirker ikke spillet, så de bare ignoreres foreløpig.
