@@ -17,7 +17,7 @@ function setup() {
     let y = 55; // Kordinater for rød figur
     let bullet; // Kulen til rød figur
     let bx = x; // X-akse til rød figurs kule
-    let by = y;
+    let by = y; // Y-akse for kule til bruk i overlap
 
     let x2 = 55; // Kordinater for blå figur
     let y2 = 55; // Kordinater for blå figur
