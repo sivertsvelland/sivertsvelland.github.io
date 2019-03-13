@@ -1,3 +1,7 @@
+body {
+    background-color: skyblue;
+}
+
 #intro {
     position: absolute;
     height: 100vh;
@@ -158,6 +162,7 @@
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    font-family: fantasy;
 }
 
 .button:hover {
@@ -302,10 +307,10 @@
 
 #warrior2 {
     position: absolute;
-    bottom: 55px;
+    top: 495px;
     height: 50px;
     width: 50px;
-    right: 55px;
+    left: 695px;
     border-radius: 50%;
     background-color: rgb(59, 59, 255);
     border: solid black 0.5px;
@@ -414,4 +419,24 @@
     bottom: 0;
     right: 0;
     border-radius: 50%;
+}
+
+#winner {
+    position: absolute;
+    left: calc(50vw - 400px);
+    width: 800px;
+    height: 600px;
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: fantasy;
+    margin-top: 100px;
+}
+
+#omstart {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    display: none;
 }

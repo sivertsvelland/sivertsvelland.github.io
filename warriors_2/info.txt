@@ -1,0 +1,10 @@
+Styre figurene:
+    Rød figur:
+        Bevege: WASD
+        Boost: Shift
+        Skyte: Space
+
+    Blå figur:
+        Bevege: Piltaster
+        Boost: "-"
+        Skyte: Alt
