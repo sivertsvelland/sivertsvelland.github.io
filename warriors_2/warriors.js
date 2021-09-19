@@ -21,13 +21,16 @@ function setup() {
 
     let x = 55; // Kordinater for rød figur
     let y = 55; // Kordinater for rød figur og kule
-    let bullet; // Kulen til rød figur
+    let bullet = document.getElementById("bullet")
     let bx = x; // X-akse til rød figurs kule
 
     let x2 = 695; // Kordinater for blå figur
     let y2 = 495; // Kordinater for blå figur
     let bullet2; //kulen til blå figur
     let bx2 = x2; // X-akse til blå figurs kule
+
+    let b1 = false;
+    let b2 = false;
 
 
     let warrior = document.getElementById("warrior"); // Rød figur
@@ -44,7 +47,7 @@ function setup() {
         const s = warrior.style;
         const a = isDown('Shift') ? 10 : 1; // Boost
         if (isDown('s')) s.top = (y += a) + 'px'; if (y <= 19) { y = 19; }
-        if (isDown('w')) s.top = (y -= a) + 'px'; if (y >= 546) { y = 546; }
+        if (isDown('w')) s.top = (y -= a) + 'px'; if (y >= 545) { y = 545; }
         if (isDown('a')) s.left = (x -= a) + 'px'; if (x >= 731) { x = 731; }
         if (isDown('d')) s.left = (x += a) + 'px'; if (x <= 17) { x = 17; }
 
@@ -55,43 +58,55 @@ function setup() {
         function shoot(e) {
             switch (e.key) {
                 case " ":
-                    if (!bullet) {
+                    if (!b1) {
+                        
+                        bullet.style.top = y + 'px';
+                        bullet.style.left = x + 'px';
+                        /*
                         bullet = document.createElement("div");
                         bullet.className = "bullet";
                         bullet.style.top = y + 'px';
                         bullet.style.left = x + 'px';
                         divBoard.appendChild(bullet);
+                        */
+                        b1 = true;
                         moveBullet();
-
+                        
                     }
                     break;
             }
+
         }
 
         // Flytter kule, fjerner kule når den når enden av brettet, for rød
         function moveBullet() {
-            if (bullet) {
-                bullet.style.top = y;
+            if (b1) {
+                bullet.style.opacity = "1";
+                //bullet.style.top = String(y + );
                 bullet.style.left = bx++ + "px";
+                
 
                 if (overlap({ x: x2, y: y2, w: 50, h: 75 }, { x: bx, y: y, w: 20, h: 20 })) {
                     document.getElementById("warrior2").style.display = "none";
                     document.getElementById("winner").style.display = "block";
                     divWinner.innerHTML = "Red warrior won!";
                     document.getElementById("omstart").style.display = "block";
-                }
-
-                if (bx > 780) {
-                    divBoard.removeChild(bullet);
+                } else if (bx > 780) {
+                    bullet.style.top = y + 'px';
+                    bullet.style.left = x + 'px';
+                    b1 = false;
+                    bullet.style.opacity = "0.2";
                     return;
                 }
+
+
                 window.requestAnimationFrame(moveBullet);
+
             }
 
             function overlap(a, b) {
                 return (a.x < b.x - a.w && a.y < b.y + a.w && a.y > b.y - a.h && b.y < a.y + b.h);
             }
-
         }
 
         window.requestAnimationFrame(moveWarrior);
@@ -103,8 +118,8 @@ function setup() {
         function isDown(key) { return downKeys.has(key) }
         const s2 = warrior2.style;
         const a2 = isDown('-') ? 10 : 1; // Boost
-        if (isDown('ArrowDown')) s2.top = (y2 += a2) + 'px'; if (y2 <= 3) { y2 = 3; }
-        if (isDown('ArrowUp')) s2.top = (y2 -= a2) + 'px'; if (y2 >= 530) { y2 = 530; }
+        if (isDown('ArrowDown')) s2.top = (y2 += a2) + 'px'; if (y2 <= 19) { y2 = 19; }
+        if (isDown('ArrowUp')) s2.top = (y2 -= a2) + 'px'; if (y2 >= 545) { y2 = 545; }
         if (isDown('ArrowLeft')) s2.left = (x2 -= a2) + 'px'; if (x2 >= 731) { x2 = 731; }
         if (isDown('ArrowRight')) s2.left = (x2 += a2) + 'px'; if (x2 <= 17) { x2 = 17; }
 

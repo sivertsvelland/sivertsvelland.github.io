@@ -300,9 +300,10 @@ body {
     width: 20px;
     height: 20px;
     background-color: black;
-    top: 0;
-    left: 0;
+    /*top: 55;
+    left: 55;*/
     border-radius: 50%;
+    opacity: 0.2;
 }
 
 #warrior2 {
